@@ -2,10 +2,10 @@
   "name": "learning-devops-login",
   "private": true,
   "scripts": {
-    "start": "serve . -l tcp://0.0.0.0:3000 --no-port-switching"
-  },
+  "start": "serve . -l tcp://0.0.0.0:$PORT --no-port-switching"
+},
   "devDependencies": {
-    "gh-pages": "^6.3.0",
     "serve": "^14.2.4"
   }
 }
+
