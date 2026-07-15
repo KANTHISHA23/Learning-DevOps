@@ -22,11 +22,10 @@ jobs:
         run: npm install
 
       - name: Verify HTML exists
-      run: |
-        if [ -f index.html ]; then
-          echo "Website found!"
-        else
-          echo "Website missing!"
-          exit 1
-        fi
-        
+        run: |
+          if [ -f index.html ]; then
+            echo "Website found!"
+          else
+            echo "Website missing!"
+            exit 1
+          fi
