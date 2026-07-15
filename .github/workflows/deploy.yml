@@ -21,5 +21,12 @@ jobs:
       - name: Install Packages
         run: npm install
 
-      - name: Check Project
-        run: echo "Project is ready!"
+      - name: Verify HTML exists
+      run: |
+        if [ -f index.html ]; then
+          echo "Website found!"
+        else
+          echo "Website missing!"
+          exit 1
+        fi
+        
